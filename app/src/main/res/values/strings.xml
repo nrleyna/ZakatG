@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Zakat G</string>
+    <string name="total_value">Total Value: %.2f</string>
+    <string name="zakat_payable_value">Zakat Payable Value (RM): %.2f</string>
+    <string name="total_zakat">Total Zakat (RM): %.2f</string>
+    <string name="button_clear">Clear</string>
+</resources>

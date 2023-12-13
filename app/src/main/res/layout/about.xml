@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewDeveloper"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/developer_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView for Developer Details -->
+    <TextView
+        android:id="@+id/textViewDeveloperDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by:"
+        android:textSize="18sp"
+        android:layout_below="@+id/imageViewDeveloper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView for Name -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NURUL AINA BINTI ABDUL HALIM"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewDeveloperDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView for Matrix Number -->
+    <TextView
+        android:id="@+id/textViewMatrixNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matric Number:2021829644"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView for Group -->
+    <TextView
+        android:id="@+id/textViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group: RCS2405A"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewMatrixNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView for Programme Code -->
+    <TextView
+        android:id="@+id/textViewProgrammeCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programme Code: CS240"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView for Additional Information -->
+    <TextView
+        android:id="@+id/textViewAdditionalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Information:\nThis project is available on my GitHub."
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewProgrammeCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView for Copyright Statement -->
+    <TextView
+        android:id="@+id/textViewCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright © 2023 ZakatG"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewAdditionalInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView for Application Website URL -->
+    <TextView
+        android:id="@+id/textViewAppWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Github"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewCopyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

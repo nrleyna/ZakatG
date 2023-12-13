@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Form 1: Weight of the gold in grams -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Weight of the gold in grams"
+        android:id="@+id/textViewForm1"
+        android:layout_below="@+id/buttonClear"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewForm1"
+        android:hint="Weight (grams)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Form 2: Current gold value per gram -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Current gold value per gram (RM)"
+        android:id="@+id/textViewForm2"
+        android:layout_below="@+id/editTextWeight"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editTextGoldValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewForm2"
+        android:hint="Gold Value per Gram"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Dropdown for Type of Gold -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose type of gold"
+        android:id="@+id/textViewGoldType"
+        android:layout_below="@+id/editTextGoldValue"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/spinnerGoldType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGoldType"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_border" />
+
+    <!-- Linear layout for buttons -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerGoldType"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Calculate" />
+
+        <!-- Clear Button -->
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Clear" />
+    </LinearLayout>
+
+    <!-- TextViews for Results -->
+    <TextView
+        android:id="@+id/textViewTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Value: 0.00"
+        android:layout_below="@+id/buttonLayout"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewZakatPayable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zakat Payable Value (RM) : 0.00"
+        android:layout_below="@+id/textViewTotalValue"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewTotalZakat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewZakatPayable"
+        android:layout_marginTop="16dp"
+        android:text="Total Zakat (RM) : 0.00"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+</RelativeLayout>
