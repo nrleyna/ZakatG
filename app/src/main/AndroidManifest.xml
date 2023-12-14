@@ -24,7 +24,8 @@
             android:parentActivityName=".HomepageActivity"/>
         <activity android:name=".AboutActivity"
             android:parentActivityName=".HomepageActivity"/>
-        />
+        <activity android:name=".InstructionActivity"
+            android:parentActivityName=".HomepageActivity"/>
     </application>
 
 

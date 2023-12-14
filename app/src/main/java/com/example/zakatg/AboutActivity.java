@@ -20,6 +20,8 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
+        getSupportActionBar().setTitle("About Developer");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Set up the ActionBar with a back button
         ActionBar actionBar = getSupportActionBar();
@@ -33,7 +35,7 @@ public class AboutActivity extends AppCompatActivity {
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(View widget) {
-                String githubUrl = "https://github.com/nrleyna/assignment1/";
+                String githubUrl = "https://github.com/nrleyna/ZakatG";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(githubUrl));
                 startActivity(intent);
             }

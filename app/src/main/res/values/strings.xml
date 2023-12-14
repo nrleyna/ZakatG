@@ -1,7 +1,14 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Zakat G</string>
     <string name="total_value">Total Value: %.2f</string>
     <string name="zakat_payable_value">Zakat Payable Value (RM): %.2f</string>
     <string name="total_zakat">Total Zakat (RM): %.2f</string>
     <string name="button_clear">Clear</string>
+    <string name="about_content">Welcome to Zakat Gold, your go-to app for estimating Zakat payments for gold assets.
+       \n\n1. Easily calculate Zakat for gold assets based on weight and current value.
+       \n\n2. Explore multiple types of gold, including gold for keeping and gold for wearing.
+        \n\n3. Enjoy a clear and simple interface, designed for easy data input and accurate results.
+        \n\n4. Access educational resources, including helpful notices and step-by-step instructions for using the Zakat calculator.
+        \n\nThank you for choosing Zakat Gold! For questions or feedback, feel free to reach out to us.
+    </string>
 </resources>
